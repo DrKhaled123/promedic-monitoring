@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/*.log
+
+# Cache
+.cache/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Screenshots (too large for git)
+screenshots/*/
+!screenshots/.gitkeep
+
+# Reports (generated)
+reports/*.json
+!reports/.gitkeep
+
+# Editor files
+.vscode/
+.idea/
+*.swp

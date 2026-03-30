@@ -1,0 +1,39 @@
+{
+  "name": "ai-monitoring-agent",
+  "version": "1.0.0",
+  "description": "AI-powered Playwright monitoring agent for web applications",
+  "main": "monitor.js",
+  "scripts": {
+    "monitor:ielts": "node monitor.js --app=ielts",
+    "monitor:promedic": "node monitor.js --app=promedic",
+    "monitor:all": "node monitor.js --app=all",
+    "test": "playwright test",
+    "install:browsers": "playwright install chromium",
+    "report:serve": "npx serve reports",
+    "cron:setup": "node setup-cron.js"
+  },
+  "dependencies": {
+    "playwright": "^1.42.0",
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.2.0",
+    "date-fns": "^3.3.1",
+    "nodemailer": "^6.9.11",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "playwright",
+    "monitoring",
+    "automation",
+    "testing",
+    "ai-agent"
+  ],
+  "author": "ProMedic DevOps",
+  "license": "MIT"
+}
